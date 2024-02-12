@@ -13,6 +13,7 @@ RUN git clone https://github.com/Ladvik/fitn.git .
 # Копируем скрипт проверки и обновления версии
 COPY check_update.sh /app/check_update.sh
 
+
 # Запускаем скрипт при запуске контейнера
 CMD ["sh", "/app/check_update.sh"]
 
